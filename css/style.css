@@ -1,0 +1,126 @@
+/*------------------------ Universal CSS Start ------------------------*/
+* {
+  margin: 0;
+}
+
+/*-------- Header --------*/
+header {
+  background-color: #f9f4ee;
+  border-bottom: 1px solid black;
+  height: 134px;
+  /* padding: 0 10px; */
+  /* position: sticky; */
+  /* top: 0; */
+}
+
+h1{
+  font-family: 'GFS Didot', serif;
+}
+
+/*---- Desktop ----*/
+#desktop_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 35px;
+  height: 100%;
+}
+
+#desktop_header h1 {
+  font-size: 60px;
+}
+
+#desktop_header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#desktop_header li {
+  margin-left: 90px;
+}
+
+#desktop_header li a {
+  text-decoration: none;
+  font-size: 38px;
+  color: black;
+}
+
+/*---- Mobile ----*/
+#mobile_header {
+  display: none;
+}
+
+#mobile_header_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile_header_top h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#mobile_header_top a img {
+  height: 66px;
+  width: 66px;
+}
+#mobile_header_top i {
+  font-size: 37px;
+}
+
+#mobile_nav {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#mobile_nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mobile_nav li {
+  margin-bottom: 20px;
+}
+
+#mobile_nav a {
+  text-decoration: none;
+  font-size: 32px;
+}
+
+/*-------- Footer --------*/
+/*---- Desktop ----*/
+
+footer i {
+  font-size: 50px;
+}
+
+/*---- Mobile ----*/
+
+/*------------------------ Universal CSS End ------------------------*/
+
+/*------------------------ Page specific CSS Start ------------------------*/
+
+/*------------------------ Page specific CSS End ------------------------*/
+
+/*------------------------ Media queries ------------------------*/
+@media screen and (max-width: 426px) {
+  #desktop_header {
+    display: none;
+  }
+
+  #mobile_header {
+    display: block;
+    margin: 0 10px;
+  }
+
+  footer i {
+    font-size: 10vw;
+  }
+}
