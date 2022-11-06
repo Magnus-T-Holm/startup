@@ -1,104 +1,117 @@
 /*------------------------ Universal CSS Start ------------------------*/
 * {
-  margin: 0;
+	margin: 0;
+	text-decoration: none;
 }
 
 /*-------- Header --------*/
 header {
-  background-color: #f9f4ee;
-  border-bottom: 1px solid black;
-  height: 134px;
-  /* padding: 0 10px; */
-  /* position: sticky; */
-  /* top: 0; */
+	background-color: #f9f4ee;
+	border-bottom: 1px solid black;
+	height: 134px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* padding: 0 10px; */
+	/* position: sticky; */
+	/* top: 0; */
 }
 
-h1{
-  font-family: 'GFS Didot', serif;
+h1 {
+	font-family: "GFS Didot", serif;
 }
 
 /*---- Desktop ----*/
 #desktop_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 35px;
-  height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 35px;
 }
 
 #desktop_header h1 {
-  font-size: 60px;
+	font-size: 60px;
 }
 
 #desktop_header nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;
 }
 
 #desktop_header li {
-  margin-left: 90px;
+	margin-left: 90px;
 }
 
 #desktop_header li a {
-  text-decoration: none;
-  font-size: 38px;
-  color: black;
+	font-size: 38px;
+	color: black;
 }
 
 /*---- Mobile ----*/
 #mobile_header {
-  display: none;
+	display: none;
 }
 
 #mobile_header_top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #mobile_header_top h1 {
-  font-size: 40px;
-  font-weight: normal;
+	font-size: 40px;
+	font-weight: normal;
 }
 
 #mobile_header_top a img {
-  height: 66px;
-  width: 66px;
+	height: 66px;
+	width: 66px;
 }
 #mobile_header_top i {
-  font-size: 37px;
+	font-size: 37px;
 }
 
 #mobile_nav {
-  display: none;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding-top: 20px;
+	display: none;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding-top: 20px;
 }
 
 #mobile_nav ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 #mobile_nav li {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 #mobile_nav a {
-  text-decoration: none;
-  font-size: 32px;
+	font-size: 32px;
+}
+
+/* ---- Current page id | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
+.current_page {
+	/* text-decoration: underline solid; */
+	border-bottom: 1px solid black;
+	padding: 0 5px;
 }
 
 /*-------- Footer --------*/
 /*---- Desktop ----*/
+footer {
+	background-color: #f9f4ee;
+	border-top: 1px solid black;
+}
 
 footer i {
-  font-size: 50px;
+	font-size: 50px;
+	color: black;
 }
 
 /*---- Mobile ----*/
@@ -110,17 +123,22 @@ footer i {
 /*------------------------ Page specific CSS End ------------------------*/
 
 /*------------------------ Media queries ------------------------*/
+@media screen and (max-width: 899px) {
+	#desktop_header li a {
+		font-size: 24px;
+	}
+}
 @media screen and (max-width: 426px) {
-  #desktop_header {
-    display: none;
-  }
+	#desktop_header {
+		display: none;
+	}
 
-  #mobile_header {
-    display: block;
-    margin: 0 10px;
-  }
+	#mobile_header {
+		display: block;
+		margin: 0 10px;
+	}
 
-  footer i {
-    font-size: 10vw;
-  }
+	footer i {
+		font-size: 10vw;
+	}
 }
