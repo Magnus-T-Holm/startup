@@ -1,144 +1,208 @@
 /*------------------------ Universal CSS Start ------------------------*/
 * {
-	margin: 0;
-	text-decoration: none;
+  margin: 0;
+  text-decoration: none;
 }
 
 /*-------- Header --------*/
 header {
-	background-color: #f9f4ee;
-	border-bottom: 1px solid black;
-	height: 134px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/* padding: 0 10px; */
-	/* position: sticky; */
-	/* top: 0; */
+  background-color: rgb(249, 244, 238);
+  border-bottom: 1px solid black;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-	font-family: "GFS Didot", serif;
+  font-family: "GFS Didot", serif;
 }
 
 /*---- Desktop ----*/
 #desktop_header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 35px;
+}
+
+#desktop_header div {
+  display: flex;
+  align-items: center;
 }
 
 #desktop_header h1 {
-	font-size: 60px;
+  font-size: 60px;
+  margin-left: 20px;
 }
 
 #desktop_header nav ul {
-	display: flex;
-	list-style: none;
-	padding: 0;
-}
-
-#desktop_header li {
-	margin-left: 90px;
+  display: flex;
+  list-style: none;
+  gap: 90px;
+  padding: 0;
 }
 
 #desktop_header li a {
-	font-size: 38px;
-	color: black;
+  font-size: 38px;
+  color: black;
 }
 
 /*---- Mobile ----*/
 #mobile_header {
-	display: none;
+  display: none;
 }
 
 #mobile_header_top {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #mobile_header_top h1 {
-	font-size: 40px;
-	font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
 }
 
 #mobile_header_top a img {
-	height: 66px;
-	width: 66px;
+  height: 66px;
+  width: 66px;
 }
 #mobile_header_top i {
-	font-size: 37px;
+  font-size: 37px;
 }
 
-#mobile_nav {
-	display: none;
-	justify-content: center;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	padding-top: 20px;
+#mobile_overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(249, 244, 238);
+  overflow-x: hidden;
+  transition: 0.2s;
 }
 
-#mobile_nav ul {
-	list-style: none;
-	padding: 0;
+#overlay_content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-#mobile_nav li {
-	margin-bottom: 20px;
+#overlay_content ul {
+  list-style: none;
+  padding: 0;
+  align-self: center;
 }
 
-#mobile_nav a {
-	font-size: 32px;
+#mobile_overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.2s;
 }
 
-/* ---- Current page id | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
+.closebtn {
+  position: absolute;
+  top: 49px;
+  right: 13px;
+  font-size: 35px;
+  color: black;
+}
+
+/* ---- Current page class | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
 .current_page {
-	/* text-decoration: underline solid; */
-	border-bottom: 1px solid black;
-	padding: 0 5px;
+  /* text-decoration: underline solid; */
+  border-bottom: 1px solid black;
+  /* margin: 0 140px; */
 }
 
 /*-------- Footer --------*/
 /*---- Desktop ----*/
 footer {
-	background-color: #f9f4ee;
-	border-top: 1px solid black;
+  background-color: #f9f4ee;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 20px 0;
+}
+
+#social_media_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#social_media_container div {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 footer i {
-	font-size: 50px;
-	color: black;
+  font-size: 50px;
+  color: black;
+  margin-right: 20px;
 }
-
-/*---- Mobile ----*/
 
 /*------------------------ Universal CSS End ------------------------*/
 
 /*------------------------ Page specific CSS Start ------------------------*/
 
+main {
+  height: 600px;
+}
+
 /*------------------------ Page specific CSS End ------------------------*/
 
 /*------------------------ Media queries ------------------------*/
-@media screen and (max-width: 899px) {
-	#desktop_header li a {
-		font-size: 24px;
-	}
+@media screen and (max-width: 990px) {
+  #desktop_header nav ul {
+    gap: 60px;
+  }
 }
-@media screen and (max-width: 426px) {
-	#desktop_header {
-		display: none;
-	}
 
-	#mobile_header {
-		display: block;
-		margin: 0 10px;
-	}
+@media screen and (max-width: 930px) {
+  #desktop_header nav ul {
+    gap: 40px;
+  }
+}
 
-	footer i {
-		font-size: 10vw;
-	}
+@media screen and (max-width: 900px) {
+  #desktop_header nav a {
+    font-size: 24px;
+  }
+
+  #desktop_header h1 {
+    font-size: 50px;
+  }
+}
+
+/* Mobile & Tablet */
+@media screen and (max-width: 768px) {
+  #desktop_header {
+    display: none;
+  }
+
+  #mobile_header {
+    display: block;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  footer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }

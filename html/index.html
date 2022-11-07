@@ -21,7 +21,12 @@
   <body>
     <header>
       <div id="desktop_header">
-        <h1>Overskrift</h1>
+        <div>
+          <a href="index.html"
+            ><img src="../public/temp_logo.jpg" alt="Café logo"
+          /></a>
+          <h1>Overskrift</h1>
+        </div>
         <nav>
           <ul>
             <li class="current_page"><a href="#">Menu</a></li>
@@ -39,19 +44,47 @@
             onclick="menu()"
           ></i>
         </div>
-        <nav id="mobile_nav">
-          <ul>
-            <li><a href="#">Temp</a></li>
-            <li><a href="#">Temp</a></li>
-            <li><a href="#">Temp</a></li>
-          </ul>
-        </nav>
+        <div id="mobile_overlay">
+          <i class="fa-solid fa-x closebtn" onclick="menu()"></i>
+          <nav id="overlay_content">
+            <ul>
+              <li class="current_page"><a href="#">Menu</a></li>
+              <li><a href="#">Kaffe</a></li>
+              <li><a href="#">Om Os</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- Page content goes here -->
+    </main>
     <footer>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <div id="social_media_container">
+        <a href="#"
+          ><div>
+            <i class="fa-brands fa-instagram"></i>
+            <p>@cafe_name</p>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <i class="fa-brands fa-tiktok"></i>
+            <p>@cafe_name</p>
+          </div>
+        </a>
+      </div>
+      <div id="opening_hours">
+        <h3>Åbnings tider</h3>
+        <p>Mandag-Torsdag: 9:30 - 22:00</p>
+        <p>Fredag og Lørdag: 9:30 - 23:00</p>
+        <p>Søndag: 9:30 - 22:00</p>
+      </div>
+      <div id="address">
+        <h3>Adresse</h3>
+        <p>Falkoner Alle 24a</p>
+        <p>2000 Frederiksberg</p>
+      </div>
     </footer>
   </body>
 </html>
