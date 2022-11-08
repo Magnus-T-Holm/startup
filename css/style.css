@@ -110,7 +110,7 @@ h1 {
   transition: 0.2s;
 }
 
-.closebtn {
+.close_button {
   position: absolute;
   top: 49px;
   right: 13px;

@@ -1,3 +1,4 @@
+// Opens and closes the mobile menu
 function menu() {
   var menu = document.querySelector("#mobile_overlay");
   var body = document.querySelector("body");
