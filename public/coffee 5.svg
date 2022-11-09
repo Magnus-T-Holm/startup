@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.64 32.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6b413b;
+      }
+
+      .cls-2 {
+        fill: #4b2f2a;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke: #0c0707;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="cls-3" points=".93 .88 13.31 31.82 38.38 31.82 50.76 .88"/>
+    <polygon class="cls-2" points="12.33 19.77 15.59 28.24 36.1 28.24 39.36 19.77 12.33 19.77"/>
+    <path class="cls-3" d="M45.32,16.45c2.84,1.16,5.91,.42,7.35-1.49,1.9-2.51,1.04-7.15-2.82-9.23"/>
+  </g>
+  <path class="cls-1" d="M7.58,9.14c2.89,6.5,5.79,13.01,8.68,19.51h20.17c2.56-6.5,5.11-13.01,7.67-19.51H7.58Z"/>
+  <g>
+    <line class="cls-4" x1="40.53" y1="5.74" x2="22.29" y2="5.74"/>
+    <line class="cls-4" x1="40.53" y1=".5" x2="22.29" y2=".5"/>
+    <line class="cls-4" x1="29.94" y1="3.12" x2="11.7" y2="3.12"/>
+  </g>
+</svg>

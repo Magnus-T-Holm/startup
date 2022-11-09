@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.65 32.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6b413b;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-3 {
+        stroke: #0c0707;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="cls-2" points=".93 .37 13.31 31.31 38.39 31.31 50.76 .37"/>
+    <polygon class="cls-1" points="12.33 19.26 15.59 27.73 36.11 27.73 39.36 19.26 12.33 19.26"/>
+    <path class="cls-2" d="M45.33,15.94c2.84,1.16,5.91,.42,7.35-1.49,1.9-2.51,1.04-7.15-2.82-9.23"/>
+  </g>
+  <g>
+    <line class="cls-3" x1="40.26" y1="16.48" x2="22.02" y2="16.48"/>
+    <line class="cls-3" x1="40.26" y1="11.25" x2="22.02" y2="11.25"/>
+    <line class="cls-3" x1="29.67" y1="13.86" x2="11.43" y2="13.86"/>
+    <rect class="cls-4" x="14.38" y="8.89" width=".97" height=".97"/>
+    <rect class="cls-4" x="19.38" y="6.25" width=".71" height="1.06"/>
+    <rect class="cls-4" x="31.91" y="5.25" width=".76" height=".76"/>
+    <rect class="cls-4" x="37.73" y="6.25" width=".91" height=".91"/>
+  </g>
+</svg>

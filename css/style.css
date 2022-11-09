@@ -4,11 +4,14 @@
   text-decoration: none;
 }
 
+body {
+  background-color: rgb(249, 244, 238);
+}
+
 /*-------- Header --------*/
 header {
-  background-color: rgb(249, 244, 238);
   border-bottom: 1px solid black;
-  height: 134px;
+  height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +72,7 @@ h1 {
   height: 66px;
   width: 66px;
 }
+
 #mobile_header_top i {
   font-size: 37px;
 }
@@ -135,6 +139,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 20px 0;
+  font-size: 32px;
 }
 
 #social_media_container {
@@ -159,13 +164,138 @@ footer i {
 
 /*------------------------ Page specific CSS Start ------------------------*/
 
-main {
-  height: 600px;
+#coffee_title {
+  text-align: center;
+}
+
+#coffee_title h1 {
+  font-size: 100px;
+  font-family: "Bodoni Moda", serif;
+}
+
+#coffee_content {
+  margin: 145px 0 50px 0;
+  display: grid;
+  grid-template-areas:
+    ". coffee1 coffee2 coffee3 ."
+    ". coffee4 coffee5 coffee6 ."
+    ". coffee7 coffee8 coffee9 .";
+  row-gap: 40px;
+  align-content: center;
+}
+
+.coffee1 {
+  grid-area: coffee1;
+}
+
+.coffee2 {
+  grid-area: coffee2;
+}
+
+.coffee3 {
+  grid-area: coffee3;
+}
+
+.coffee4 {
+  grid-area: coffee4;
+}
+
+.coffee5 {
+  grid-area: coffee5;
+}
+
+.coffee6 {
+  grid-area: coffee6;
+}
+
+.coffee7 {
+  grid-area: coffee7;
+}
+
+.coffee8 {
+  grid-area: coffee8;
+}
+
+.coffee9 {
+  grid-area: coffee9;
+}
+
+.types_of_coffee {
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  width: 428px;
+}
+
+.types_of_coffee h3 {
+  font-size: 36px;
+}
+
+.types_of_coffee p {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.types_of_coffee img {
+  width: 180px;
 }
 
 /*------------------------ Page specific CSS End ------------------------*/
 
 /*------------------------ Media queries ------------------------*/
+@media screen and (max-width: 1800px) {
+  footer {
+    font-size: 24px;
+  }
+
+  .types_of_coffee img {
+    width: 130px;
+  }
+
+  .types_of_coffee h3 {
+    font-size: 30px;
+  }
+
+  .types_of_coffee p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  footer {
+    font-size: 16px;
+  }
+
+  #coffee_title h1 {
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 1290px) {
+
+  /* #coffee_content {
+    grid-template-areas:
+      ". coffee1 coffee2 ."
+      ". coffee3 coffee4 ."
+      ". coffee5 coffee6 ."
+      ". coffee7 coffee8 ."
+      ". coffee9 .";
+  } */
+  .types_of_coffee img {
+    width: 90px;
+  }
+
+  .types_of_coffee h3 {
+    font-size: 30px;
+  }
+
+  .types_of_coffee p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
 @media screen and (max-width: 990px) {
   #desktop_header nav ul {
     gap: 60px;

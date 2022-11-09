@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/2ca87244a7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="desktop_header">
-        <div>
-          <a href="index.html"
-            ><img src="../public/temp_logo.jpg" alt="Café logo"
-          /></a>
-          <h1>Overskrift</h1>
-        </div>
-        <nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/2ca87244a7.js" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="desktop_header">
+      <div>
+        <a href="index.html"><img src="../public/temp_logo.jpg" alt="Café logo"></a>
+        <h1>Overskrift</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="coffee.html">Kaffe</a></li>
+          <li><a href="about_us.html">Om Os</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile_header">
+      <div id="mobile_header_top">
+        <h1>Overskrift</h1>
+        <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
+      </div>
+      <div id="mobile_overlay">
+        <i class="fa-solid fa-x close_button" onclick="menu()"></i>
+        <nav id="overlay_content">
           <ul>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="coffee.html">Kaffe</a></li>
@@ -35,56 +44,43 @@
           </ul>
         </nav>
       </div>
-      <div id="mobile_header">
-        <div id="mobile_header_top">
-          <h1>Overskrift</h1>
-          <i
-            id="mobile_menu_button"
-            class="fa-solid fa-bars"
-            onclick="menu()"
-          ></i>
+    </div>
+  </header>
+  <main>
+    <!-- Page content goes here -->
+  </main>
+  <footer>
+    <div id="social_media_container">
+      <a href="#">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <p>@cafe_name</p>
         </div>
-        <div id="mobile_overlay">
-          <i class="fa-solid fa-x close_button" onclick="menu()"></i>
-          <nav id="overlay_content">
-            <ul>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="coffee.html">Kaffe</a></li>
-              <li><a href="about_us.html">Om Os</a></li>
-            </ul>
-          </nav>
+      </a>
+      <a href="#">
+        <div>
+          <i class="fa-brands fa-tiktok"></i>
+          <p>@cafe_name</p>
         </div>
-      </div>
-    </header>
-    <main>
-      <!-- Page content goes here -->
-    </main>
-    <footer>
-      <div id="social_media_container">
-        <a href="#"
-          ><div>
-            <i class="fa-brands fa-instagram"></i>
-            <p>@cafe_name</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <i class="fa-brands fa-tiktok"></i>
-            <p>@cafe_name</p>
-          </div>
-        </a>
-      </div>
-      <div id="opening_hours">
-        <h3>Åbnings tider</h3>
-        <p>Mandag-Torsdag: 9:30 - 22:00</p>
-        <p>Fredag og Lørdag: 9:30 - 23:00</p>
-        <p>Søndag: 9:30 - 22:00</p>
-      </div>
-      <div id="address">
-        <h3>Adresse</h3>
-        <p>Falkoner Alle 24a</p>
-        <p>2000 Frederiksberg</p>
-      </div>
-    </footer>
-  </body>
+      </a>
+    </div>
+    <div id="opening_hours">
+      <h3>Åbnings tider</h3>
+      <p>Mandag-Torsdag: 9:30 - 22:00</p>
+      <p>Fredag og Lørdag: 9:30 - 23:00</p>
+      <p>Søndag: 9:30 - 22:00</p>
+    </div>
+    <div id="address">
+      <h3>Adresse</h3>
+      <p>Falkoner Alle 24a</p>
+      <p>2000 Frederiksberg</p>
+    </div>
+    <div id="contact">
+      <h3>Kontakt</h3>
+      <p>+45 12345678</p>
+      <p>cafe@email.dk</p>
+    </div>
+  </footer>
+</body>
+
 </html>
