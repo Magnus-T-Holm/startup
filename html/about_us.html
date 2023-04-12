@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    >
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" >
-    <script
-      src="https://kit.fontawesome.com/2ca87244a7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="desktop_header">
-        <div>
-          <a href="index.html"
-            ><img src="../public/temp_logo.jpg" alt="Café logo"
-          ></a>
-          <h1>Overskrift</h1>
-        </div>
-        <nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <title>Om Os</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/2ca87244a7.js" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="desktop_header">
+      <div>
+        <a href="index.html"><img src="../public/logo.svg" alt="Café logo"></a>
+        <h1>Influence</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="coffee.html">Kaffe</a></li>
+          <li class="current_page"><a href="about_us.html">Om Os</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile_header">
+      <div id="mobile_header_top">
+        <a href="index.html">
+          <h1>Influence</h1>
+        </a>
+        <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
+      </div>
+      <div id="mobile_overlay">
+        <i class="fa-solid fa-x close_button" onclick="menu()"></i>
+        <nav id="overlay_content">
           <ul>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="coffee.html">Kaffe</a></li>
@@ -35,61 +46,75 @@
           </ul>
         </nav>
       </div>
-      <div id="mobile_header">
-        <div id="mobile_header_top">
-          <h1>Overskrift</h1>
-          <i
-            id="mobile_menu_button"
-            class="fa-solid fa-bars"
-            onclick="menu()"
-          ></i>
+    </div>
+  </header>
+  <main>
+    <section class="information">
+      <div class="info-cafe">
+        <img src="../public/barista.jpg">
+        <div class="info-text">
+          <h1> historien bag</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam culpa dolorem explicabo rerum. Earum,
+            numquam totam, dicta tempora asperiores magnam modi sint iure dolorem impedit rem maxime aut ipsum? Lorem
+            ipsum
+            dolor, sit amet consectetur adipisicing elit. Quis, dolores error. Natus provident quae quasi aut libero
+            suscipit neque. Maiores necessitatibus mollitia recusandae adipisci quisquam accusantium dicta cupiditate
+            sapiente voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, pariatur eveniet
+            nostrum
+            ipsum deserunt quia esse? Hic repudiandae, assumenda quisquam tempore deserunt quis id perferendis quam,
+            veniam
+            debitis animi ratione!</p>
         </div>
-        <div id="mobile_overlay">
-          <i class="fa-solid fa-x close_button" onclick="menu()"></i>
-          <nav id="overlay_content">
-            <ul>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="coffee.html">Kaffe</a></li>
-              <li class="current_page"><a href="about_us.html">Om Os</a></li>
-            </ul>
-          </nav>
+      </div>
+      <div class="info-cafe">
+        <div class="info-text">
+          <h1>tankerne bag</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam at, sequi obcaecati reiciendis vitae
+            maxime dolorem, ipsam tenetur sit, vero quo dolor quidem! Excepturi vel libero nulla quis quo! Lorem ipsum
+            dolor
+            sit amet consectetur adipisicing elit. Architecto quod facere iure odio dolore aut accusantium unde quia
+            accusamus consectetur, molestias consequuntur nesciunt illum quos porro nemo animi? Obcaecati, ratione.
+            Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae, amet dolorum neque incidunt qui
+            necessitatibus ullam praesentium deserunt, minus pariatur. Quis totam et architecto omnis autem vitae, vel
+            impedit?</p>
         </div>
+        <img src="../public/kaffe.jpg">
       </div>
-    </header>
-    <main>
-      <!-- Page content goes here -->
-    </main>
-    <footer>
-      <div id="social_media_container">
-        <a href="#"
-          ><div>
-            <i class="fa-brands fa-instagram"></i>
-            <p>@cafe_name</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <i class="fa-brands fa-tiktok"></i>
-            <p>@cafe_name</p>
-          </div>
-        </a>
-      </div>
-      <div id="opening_hours">
-        <h3>Åbnings tider</h3>
-        <p>Mandag-Torsdag: 9:30 - 22:00</p>
-        <p>Fredag og Lørdag: 9:30 - 23:00</p>
-        <p>Søndag: 9:30 - 22:00</p>
-      </div>
-      <div id="address">
-        <h3>Adresse</h3>
-        <p>Falkoner Alle 24a</p>
-        <p>2000 Frederiksberg</p>
-      </div>
-      <div id="contact">
-        <h3>Kontakt</h3>
-        <p>+45 12345678</p>
-        <p>cafe@email.dk</p>
-      </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <div id="social_media_container">
+      <a href="#">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <p>@cafe_name</p>
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <i class="fa-brands fa-tiktok"></i>
+          <p>@cafe_name</p>
+        </div>
+      </a>
+    </div>
+    <div id="opening_hours">
+      <h3>Åbnings tider</h3>
+      <p>Mandag-Torsdag: 9:30 - 22:00</p>
+      <p>Fredag og Lørdag: 9:30 - 23:00</p>
+      <p>Søndag: 9:30 - 22:00</p>
+    </div>
+    <div id="address">
+      <h3>Adresse</h3>
+      <p>Falkoner Alle 24a</p>
+      <p>2000 Frederiksberg</p>
+    </div>
+    <div id="contact">
+      <h3>Kontakt</h3>
+      <p>+45 12345678</p>
+      <p>cafe@email.dk</p>
+    </div>
+  </footer>
+</body>
+
 </html>

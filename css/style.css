@@ -56,6 +56,10 @@ h1 {
   display: none;
 }
 
+#mobile_header a{
+  color: black;
+}
+
 #mobile_header_top {
   width: 100%;
   display: flex;
@@ -163,7 +167,31 @@ footer i {
 /*------------------------ Universal CSS End ------------------------*/
 
 /*------------------------ Page specific CSS Start ------------------------*/
+/*---- Front Page ----*/
+#frontpage .Café {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
+#frontpage {
+  position: relative;
+  margin: 20px;
+}
+
+.text-block {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-color: white;
+  height: 50%;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*---- Menu Page ----*/
+
+/*---- Coffee Page ----*/
 #coffee_title {
   text-align: center;
 }
@@ -175,55 +203,17 @@ footer i {
 
 #coffee_content {
   margin: 145px 0 50px 0;
-  display: grid;
-  grid-template-areas:
-    ". coffee1 coffee2 coffee3 ."
-    ". coffee4 coffee5 coffee6 ."
-    ". coffee7 coffee8 coffee9 .";
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
   row-gap: 40px;
-  align-content: center;
-}
-
-.coffee1 {
-  grid-area: coffee1;
-}
-
-.coffee2 {
-  grid-area: coffee2;
-}
-
-.coffee3 {
-  grid-area: coffee3;
-}
-
-.coffee4 {
-  grid-area: coffee4;
-}
-
-.coffee5 {
-  grid-area: coffee5;
-}
-
-.coffee6 {
-  grid-area: coffee6;
-}
-
-.coffee7 {
-  grid-area: coffee7;
-}
-
-.coffee8 {
-  grid-area: coffee8;
-}
-
-.coffee9 {
-  grid-area: coffee9;
 }
 
 .types_of_coffee {
   text-align: center;
   font-family: "Bodoni Moda", serif;
-  width: 428px;
+  width: 33%;
 }
 
 .types_of_coffee h3 {
@@ -237,6 +227,35 @@ footer i {
 
 .types_of_coffee img {
   width: 180px;
+}
+
+
+/*---- About us Page ----*/
+.information {
+  padding: 0px 100px;
+  margin-bottom: 5%;
+}
+
+.info-cafe {
+  margin-top: 5%;
+  display: flex;
+
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: center;
+}
+
+.info-text h1 {
+  text-align: start;
+  text-transform: uppercase;
 }
 
 /*------------------------ Page specific CSS End ------------------------*/
@@ -273,15 +292,6 @@ footer i {
 }
 
 @media screen and (max-width: 1290px) {
-
-  /* #coffee_content {
-    grid-template-areas:
-      ". coffee1 coffee2 ."
-      ". coffee3 coffee4 ."
-      ". coffee5 coffee6 ."
-      ". coffee7 coffee8 ."
-      ". coffee9 .";
-  } */
   .types_of_coffee img {
     width: 90px;
   }
@@ -328,11 +338,44 @@ footer i {
     display: block;
     margin: 0 10px;
   }
+
+  .types_of_coffee {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 554px) {
+  #coffee_title h1 {
+    font-size: 40px;
+  }
+
+  #coffee_content {
+    margin: 100px 0 50px 0;
+  }
+
   footer {
     flex-direction: column-reverse;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 460px) {
+  #coffee_content {
+    row-gap: 65px;
+  }
+
+  .types_of_coffee {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #coffee_title h1 {
+    font-size: 30px;
+  }
+
+  #coffee_content {
+    margin: 80px 0 50px 0;
+  }
+
 }
